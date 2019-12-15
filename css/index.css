@@ -1,0 +1,166 @@
+body {
+    background-color:#2f3542;
+}
+.wrap {
+    position: absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    text-align:center;
+    min-height:590px;
+}
+
+.bgImage {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    animation: fadeIn .5s linear;
+}
+.js-weather {
+    position:relative;
+    color:#fff;
+    font-size:50px;
+    z-index:10;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.time {
+    position: relative;
+    font-size:120px;
+    color:#fff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    margin:0;
+}
+
+.greeting-wrap {
+    position:relative;
+    font-size:50px;
+    margin-top:20px;    
+}
+
+.greeting-wrap h4 {
+    margin:0;
+    color:#fff;
+    text-align:center;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.greeting-wrap .js-form input {
+    font-size:50px;
+    padding:10px 20px;
+    color:#fff;
+    text-align:center;
+    border:0;
+    border-bottom:1px dashed #fff;
+    background-color:transparent;
+}
+input::placeholder {
+    color: #fff;
+}
+
+.form,
+.greetings {
+    display:none;
+}
+
+.showing {
+    display:block;
+}
+
+.todo-wrap {
+    position:relative;
+    margin-top:40px;
+    width:500px;
+    display:inline-block;
+}
+
+.js-toDoForm input {
+    font-size:30px;
+    padding:10px 20px;
+    color:#fff;
+    text-align:center;
+    border:0;
+    background-color:rgba(0,0,0, 0.4);
+}
+.js-toDoForm button {
+    position: relative;
+    height:54px;
+    line-height:54px;
+    font-size:20px;
+    padding:0 20px 0 20px;
+    color:#fff;
+    text-align:center;
+    border:0;
+    background-color:rgba(0,0,0, 0.7);
+    vertical-align:top;
+}
+.js-toDoForm button:before {
+    content:'✔';
+    margin-right:10px;
+    color:#fff;
+    font-size:20px;
+}
+
+.todoList-wrap {
+    max-height:220px;
+    overflow-y:auto;    
+    margin-top:20px;
+}
+.js-toDoList {
+    list-style-type:none;   
+    padding:0;
+    margin:0; 
+}
+.js-toDoList li {
+    position: relative;
+    text-align:left;
+    font-size:20px;
+    padding:10px 30px 13px;
+    color:#fff;
+    background-color:rgba(0,0,0, 0.4);
+    border-radius:5em;
+    margin:5px 0;
+}
+.js-toDoList li button {
+    position:absolute;
+    right:20px;
+    width:30px;
+    height:30px;
+    background-color:#e5e5e5;
+    border-radius:50%;
+    border:0;
+}
+
+.weather-wrap {
+    position:absolute;
+    top:20px;
+    left:20px;
+    min-width:400px;
+}
+.js-icon {
+    float:left;
+}
+.js-weather {
+    display:inline-block;
+    padding-top:15px;
+    color:#fff;
+    font-size:50px;
+    z-index:10;
+}
+.js-local {
+    display:block;
+    color:#fff;
+    font-size:20px;
+    z-index:10;
+}
