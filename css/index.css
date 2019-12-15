@@ -100,6 +100,8 @@ input:-mos-input-placeholder {
 }
 
 .js-toDoForm input {
+    width:400px;
+    box-sizing: border-box;
     font-size:30px;
     padding:10px 20px;
     color:#fff;
@@ -108,6 +110,7 @@ input:-mos-input-placeholder {
     background-color:rgba(0,0,0, 0.4);
 }
 .js-toDoForm button {
+    width:100px;
     position: relative;
     height:54px;
     line-height:54px;
